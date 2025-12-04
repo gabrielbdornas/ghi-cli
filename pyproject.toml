@@ -25,7 +25,8 @@ build-backend = "poetry.core.masonry.api"
 
 [dependency-groups]
 dev = [
-    "ipdb (>=0.13.13,<0.14.0)"
+    "ipdb (>=0.13.13,<0.14.0)",
+    "pytest (>=9.0.1,<10.0.0)"
 ]
 
 
@@ -37,6 +38,8 @@ version_provider = "pep621"
 update_changelog_on_bump = true
 major_version_zero = true
 
+[tool.pytest.ini_options]
+pythonpath = ["."]
 
 [tool.taskipy.tasks]
 publish = { cmd = "dotenv run poetry publish --build -n", help = "Publish the package on Pypi." }
