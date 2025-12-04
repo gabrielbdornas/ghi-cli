@@ -1,3 +1,9 @@
+## 0.4.0 (2025-12-04)
+
+### Feat
+
+- **git**: add new orphan branch command
+
 ## 0.3.1 (2025-11-28)
 
 ### Feat
